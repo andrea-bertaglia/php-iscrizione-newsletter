@@ -1,6 +1,7 @@
 <?php
 $result = "";
 $alert = "";
+$error = "";
 $thankyou = false;
 
 // verifico se la variabile non è null e se l'indirizzo inserito è nel formato richiesto
@@ -16,6 +17,7 @@ if (isset($_POST["email"])) {
         $alert = "alert alert-success";
     } elseif ($user_email !== "") {
         $result = "Attenzione: i dati inseriti sono errati";
+        $error = $user_email;
 
         // aggiunta della classe per lo stile dell'alert
         $alert = "alert alert-danger";

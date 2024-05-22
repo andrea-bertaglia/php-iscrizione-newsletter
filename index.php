@@ -21,7 +21,7 @@ if ($thankyou) {
         <form action="index.php" method="POST">
             <div class="mb-4">
                 <label for="email" class="form-label">Indirizzo Email</label>
-                <input type="text" class="form-control" id="email" aria-describedby="Indirizzo e-mail" name="email">
+                <input type="text" class="form-control" id="email" aria-describedby="Indirizzo e-mail" name="email" value="<?php echo $error ?>">
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
 
