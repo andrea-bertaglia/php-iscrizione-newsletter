@@ -9,7 +9,7 @@ $thankyou = false;
 
 if (isset($_POST["email"])) {
     $user_email = $_POST["email"];
-    if (strpos($user_email, "@") && strpos($user_email, ".")) {
+    if (str_contains($user_email, "@") && str_contains($user_email, ".")) {
         $result = "Ok! L'indirizzo inserito è corretto";
         $thankyou = true;
 
